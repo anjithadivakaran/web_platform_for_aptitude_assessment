@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+ 
+    <title>MCQ Quiz Sample</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='css/dashboard.css') }}" rel="stylesheet" type="text/css"/>
+    <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 	<script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='controller.js') }}"></script>
+ <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Dashboard</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="/profile.html">
+                        <i class="fas fa-user"></i>
+                         View Profile
+                    </a>
+                    <a href="/question.html">
+                        <i class="fas fa-file"></i>
+                          Quiz
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-vials"></i>
+                         Report
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                    <a href="/login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <h3>UL Education</h3>
+                </div>
+            </nav>
+
+
+            <div id="navContent">
+
+            <div id="game1"></div>
+            <div id="game2"></div>
+        </div>
+ </div>
+</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+
+</body>
+</html>

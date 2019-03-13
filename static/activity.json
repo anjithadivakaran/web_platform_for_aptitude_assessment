@@ -1,0 +1,64 @@
+{"quizlist":[
+  
+	{
+	"question":"Portuguese is spoken in _______",
+	"option1":"Brazil",
+	"option2":"Argentina",
+	"option3":"Ecuador"
+	},
+	{
+	"question":"What is the capital of Peru?",
+	"option1":"Lima",
+	"option2":"Bogota",
+	"option3":"San Juan"
+	},
+	{
+	"question":"Which country is long and thin?",
+	"option1":"Chile",
+	"option2":"Uruguay",
+	"option3":"Colombia"
+	},
+	{
+	"question":"Christ the Redeemer is located in which place?",
+	"option1":"Rio De Janeiro",
+	"option2":"Salvador",
+	"option3":"Porto Alegre"
+	},
+	{
+	"question":"Table Mountain is located at which place?",
+	"option1":"Cape Town, South Africa",
+	"option2":"Pretoria, South Africa",
+	"option3":"Port Elizabeth, South Africa"
+	},
+	{
+	"question":"Which among the following is a symbol for Peace?",
+	"option1":"Olive Branch",
+	"option2":"Jade",
+	"option3":"Heart"
+	},
+	{
+	"question":"Which among the following is the world’s largest lake?",
+	"option1":"Caspian Sea",
+	"option2":"Lake Erie",
+	"option3":"Lake Baikal"
+	},
+	{
+	"question":"Who is known as the ‘Father of Biology’?",
+	"option1":"Aristotle",
+	"option2":"Avicena",
+	"option3":"Galen"
+	},
+	{
+	"question":"Presently, who is the Chief Executive Officer of Google?",
+	"option1":"Sundar Pichai",
+	"option2":"Larry Page",
+	"option3":"Satya Nadella"
+	},
+	{
+	"question":"Which among the following is the largest forest in the world?",
+	"option1":"Taiga",
+	"option2":"Crooked Forest",
+	"option3":"Black Forest"
+	}
+	]
+	}
