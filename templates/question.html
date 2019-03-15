@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
  
-    <title>MCQ Quiz Sample</title>
+    <title>Aptitude Assessment</title>
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ url_for('static', filename='css/dashboard.css') }}" rel="stylesheet" type="text/css"/>
     <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -25,6 +25,10 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
+                    <a href="/studenthome.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
                     <a href="/profile.html">
                         <i class="fas fa-user"></i>
                          View Profile
@@ -45,23 +49,22 @@
                         <i class="fas fa-cog"></i>
                         Settings
                     </a>
-                    <a href="/login.html">
-                        <i class="fas fa-sign-out-alt"></i>
-                        Logout
-                    </a>
                 </li>
             </ul>
         </nav>
         <!-- Page Content  -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
                     </button>
                     <h3>UL Education</h3>
+                     <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-success mr-sm-2" formaction="/logout" type="submit">Log Out</button>
+                    </form>
                 </div>
             </nav>
 
@@ -81,6 +84,16 @@
         });
     </script>
 
+<!-- Footer -->
+<footer class="page-footer font-small blue" id="footer-bg" >
 
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a  href="http://uleducation.ac.in/"> UL Education.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </body>
 </html>

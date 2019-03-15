@@ -11,6 +11,13 @@
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:C:"\Users\Dell-PC\Desktop\project\projectwork\toggle.ping"");
 }
+
+#footer{
+background:#182628 !important;
+color:#65CCB8 !important;
+}
+
 body{
-	background-color: #F2F2F2 !important;
+	background: #F2F2F2 !important;
+	color:#65CCB8 !important;
 }

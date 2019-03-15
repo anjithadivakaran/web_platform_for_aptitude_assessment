@@ -16,7 +16,6 @@
     <!--nav bar-->
   <nav class="navbar  navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
-    <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
     UL education
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +24,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav  mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/home.html">Home<span class="sr-only">(current)</span></a>
       </li>    
       <li class="nav-item">
-        <a class="nav-link" href="#">About us</a>
+        <a class="nav-link" href="/aboutus.html">About us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="/contactus.html">Contact Us</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -47,7 +46,7 @@
     <div class="row">
       <div class="col-md-4 col-sm-4 col-xs-12"> </div>
       <div class="col-md-4 col-sm-4 col-xs-12">
-      <form action="/post_user" class="form-container" method="post">
+      <form action="/post_user" class="form-container" method="post" name="form">
         <h3 align="center"> SIGN UP</h3>
       <div class="form-group">
         <label for="exampleInputEmail1">Email</label>
@@ -59,18 +58,81 @@
         <label for="exampleInputPassword1"> Password</label>
         <input class="form-control" id="exampleInputPassword1" name="pass" placeholder="Password" type="password">
       </div>
-      <div class="form-group">
+     <div class="form-group">
         <label for="exampleInputPassword2"> confrim Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+        <input type="password" class="form-control" id="exampleInputPassword2" name="passw" placeholder="Password">
       </div>
-      <button type="submit" class="btn btn-success btn-block">Submit</button>
+      <button type="submit" class="btn btn-success btn-block" >Submit</button>
       </form>
   </div>
     <div class="col-md-4 col-sm-4 col-xs-12"> </div>
   </div>
 </div>
-<!-- Login Form ends here -->
+    <footer class="page-footer font-small indigo">
+
+    <!-- Footer Links -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/aboutus.html">About us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/login.html">Login</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/contactus.html">Contact Us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-5">
+          <h3>Get the best out of you, with UL Education</h3>
+          <p style="line-height: 1.7rem">The best career guidance and educational resources with highly trained teaching and non-teaching staffs. The amendments made to the curriculum on a regular basis will increase the adaptability and confidence of students.</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> UL Education.com</a>
+    </div>
+    </footer>
+    <!-- Copyright -->
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

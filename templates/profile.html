@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Dashboard</title>
+    <title>Aptitude Assessment</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -30,6 +30,10 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
+                    <a href="/studenthome.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
                     <a href="/profile.html">
                         <i class="fas fa-user"></i>
                          View Profile
@@ -50,10 +54,7 @@
                         <i class="fas fa-cog"></i>
                         Settings
                     </a>
-                    <a href="/login.html">
-                        <i class="fas fa-sign-out-alt"></i>
-                        Logout
-                    </a>
+
                 </li>
             </ul>
         </nav>
@@ -68,6 +69,9 @@
                         <i class="fas fa-align-left"></i>
                     </button>
                     <h3>UL Education</h3>
+                     <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-success mr-sm-2" formaction="/logout" type="submit">Log Out</button>
+                    </form>
                 </div>
             </nav>
 
@@ -88,17 +92,23 @@
       <div class="col-md-9 personal-info">
         <h3>Personal info</h3>
         
-        <form class="form-horizontal" role="form">
+        <form class="form-horizontal" role="form" action="/post_profile" method="post">
           <div class="form-group">
             <label class="col-lg-3 control-label">First name:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text">
+              <input name="frst_name" class="form-control" type="text">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-3 control-label">Last name:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text">
+              <input name="lst_name" class="form-control" type="text">
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-lg-3 control-label">Date of Birth:</label>
+            <div class="col-lg-8">
+              <input type="date" name="dob">
             </div>
           </div>
            <div class="form-group">
@@ -109,49 +119,49 @@
           <div class="form-group">
             <label class="col-lg-3 control-label">Phone Number</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" value="">
+              <input class="form-control" name="phn_no" type="text" value="">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-3 control-label">Email:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text">
+              <input class="form-control" name="e_mail" type="text">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">Institution</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" value="">
+              <input class="form-control" name="inst" type="text" value="">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">Class</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" value="">
+              <input class="form-control" name="clasnme" type="text" value="">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">House/Street No</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" value="">
+              <input class="form-control" name="house_name" type="text" value="">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">City</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" >
+              <input class="form-control" name="city" type="text" >
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">Country</label>
             <div class="col-md-8">
-              <input class="form-control" type="text">
+              <input class="form-control" name="country" type="text">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">Pin Code</label>
             <div class="col-md-8">
-              <input class="form-control" type="text">
+              <input class="form-control" name="pin_code" type="text">
             </div>
           </div>
           <div class="form-group">
@@ -185,7 +195,17 @@
             });
         });
     </script>
-    
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="http://uleducation.ac.in/"> UL Education.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </body>
 
 </html>
