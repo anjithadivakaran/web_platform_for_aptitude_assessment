@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/settings.html">
+                    <a href="settings.html">
                         <i class="fas fa-cog"></i>
                         Settings
                     </a>
@@ -92,7 +92,7 @@
             </nav>
 
   <div class="container">
-      {% with messages = get_flashed_messages() %}
+  {% with messages = get_flashed_messages() %}
     {% if messages %}
     {% for message in messages %}
     <div class="alert alert-info alert-dismissible" role="alert">
@@ -106,11 +106,105 @@
 
     {% block body %}{% endblock %}
     <h1>Your Information</h1>
-
-
-
-  </div>
+    <hr>
+    <div class="row">
+    <!--  left column
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="https://via.placeholder.com/100" class="avatar img-circle" alt="avatar">
+          <h6>Upload a different photo...</h6>
+          <input type="file" name="file" class="form-control">
         </div>
+      </div> -->
+
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <h3>Personal info</h3>
+
+        <form class="form-horizontal" role="form" action="/post_profile" method="post">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">First name:</label>
+            <div class="col-lg-8">
+              <input name="frst_name" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Last name:</label>
+            <div class="col-lg-8">
+              <input name="lst_name" class="form-control" type="text">
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-lg-3 control-label">Date of Birth:</label>
+            <div class="col-lg-8">
+              <input type="date" name="dob">
+            </div>
+          </div>
+           <div class="form-group">
+              <label class="radio-inline"><input type="radio" name="optradio" checked>Female</label>
+              <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+              <label class="radio-inline"><input type="radio" name="optradio">Other</label>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Phone Number</label>
+            <div class="col-lg-8">
+              <input class="form-control" name="phn_no" type="text" value="">
+            </div>
+          </div>
+        <!--  <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input class="form-control" name="e_mail" type="text">
+            </div>
+          </div> -->
+          <div class="form-group">
+            <label class="col-md-3 control-label">Institution</label>
+            <div class="col-md-8">
+              <input class="form-control" name="inst" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Class</label>
+            <div class="col-md-8">
+              <input class="form-control" name="clasnme" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">House/Street No</label>
+            <div class="col-md-8">
+              <input class="form-control" name="house_name" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">City</label>
+            <div class="col-md-8">
+              <input class="form-control" name="city" type="text" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Country</label>
+            <div class="col-md-8">
+              <input class="form-control" name="country" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Pin Code</label>
+            <div class="col-md-8">
+              <input class="form-control" name="pin_code" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <button type="submit" class="btn btn-success btn-block">Submit</button>
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Cancel">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
 
         </div>
     </div>
