@@ -83,30 +83,30 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
-          <li class="active">
+          <li >
             <a href="/studenthome.html">
               <i class="fa fa-home"></i> <span>Home</span>
             </a>
           </li>
-          <li>
+          <li class="active">
             <a href="/viewprofile">
               <i class="fa fa-users"></i> <span>Profile</span>
             </a>
           </li>
           <li>
-            <a href="/question">
-              <i class="fa fa-users"></i> <span>Quiz</span>
+            <a href="/startquiz.html">
+              <i class="fa fa-users"></i> <span>Assessment</span>
+            </a>
+          </li>
+            <li>
+            <a href="/adddesc">
+              <i class="fa fa-cog"></i> <span>Tell us more</span>
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a href="/reportgeneration">
               <i class="fa fa-users"></i> <span>Report</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-users"></i> <span>FAQ</span>
             </a>
           </li>
           <li>
@@ -163,7 +163,7 @@
             {% endfor %}
         {% endif %}
         {% endwith %}
-        <div class="box-body">
+        <div class="box-body table-responsive">
               {% block body %}
               <table id="example1" class="table table-bordered table-striped">
                <thead>

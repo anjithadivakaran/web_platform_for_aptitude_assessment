@@ -80,12 +80,12 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
-          <li>
+          <li >
             <a href="/adminhome.html">
               <i class="fa fa-home"></i> <span>Home</span>
             </a>
           </li>
-          <li class="treeview active">
+          <li class="treeview">
             <a href="#">
               <i class="fa fa-building"></i>
               <span>Instructor Management</span>
@@ -93,17 +93,17 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
-             <ul class="treeview-menu">
+            <ul class="treeview-menu">
               <li id="menu-add-new-device"><a href="/adminaddinstructor"><i class="fa fa-circle-o"></i> Add Instructor</a></li>
               <li id="menu-view-all-device"><a href="/adminviewinstructor"><i class="fa fa-circle-o"></i> View Instructor</a></li>
             </ul>
-          </li>
+          </li class="active">
           <li>
             <a href="/adminstudentmanage">
               <i class="fa fa-users"></i> <span>Student Management</span>
             </a>
           </li>
-          <li>
+          <li >
             <a href="/adminsettings.html">
               <i class="fa fa-cog"></i> <span>Settings</span>
             </a>
@@ -128,12 +128,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Edit Instructor
+        View Student
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Instructor Management</a></li>
-        <li class="active">Add Instructor</li>
+        <li><a href="#">Student Management</a></li>
+        <li class="active">View Student</li>
       </ol>
     </section>
 
@@ -162,7 +162,7 @@
             {% endif %}
             {% endwith %}
 
-
+<div class="box-body table-responsive">
            {% block body %}
               <table id="example1" class="table table-bordered table-striped">
                <thead>
@@ -204,7 +204,7 @@
               {% endblock %}
           </div>
           <!-- /.box -->
-
+          </div>
         </div>
         <!--/.col (left) -->
       </div>

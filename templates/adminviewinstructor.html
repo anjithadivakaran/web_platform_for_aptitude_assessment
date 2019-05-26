@@ -51,11 +51,8 @@
                 </li>
                 <!-- Menu Footer-->
                 <li class="user-footer">
-                  <div class="pull-left">
-                    <a href="#" class="btn btn-default btn-flat">Profile</a>
-                  </div>
                   <div class="pull-right">
-                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
                   </div>
                 </li>
               </ul>
@@ -83,12 +80,12 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
-          <li>
+          <li class="active">
             <a href="/adminhome.html">
               <i class="fa fa-home"></i> <span>Home</span>
             </a>
           </li>
-          <li class="treeview active">
+          <li class="treeview">
             <a href="#">
               <i class="fa fa-building"></i>
               <span>Instructor Management</span>
@@ -96,14 +93,14 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
-             <ul class="treeview-menu">
+            <ul class="treeview-menu">
               <li id="menu-add-new-device"><a href="/adminaddinstructor"><i class="fa fa-circle-o"></i> Add Instructor</a></li>
               <li id="menu-view-all-device"><a href="/adminviewinstructor"><i class="fa fa-circle-o"></i> View Instructor</a></li>
             </ul>
           </li>
           <li>
             <a href="/adminstudentmanage">
-              <i class="fa fa-question-circle"></i> <span>Quiz</span>
+              <i class="fa fa-users"></i> <span>Student Management</span>
             </a>
           </li>
           <li>
@@ -123,16 +120,22 @@
 
 
 
-    <section class="content-header">
-      <h1>
-        Instructor Management
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Instructor Management</a></li>
-        <li class="active">View Instructor</li>
-      </ol>
-    </section>
+
+      <section class="content-header">
+        <h1>
+          Manage Instructor
+          <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#">
+              <i class="fa fa-dashboard"></i> Home</a>
+          </li>
+          <li class="active">View Instructor</li>
+        </ol>
+      </section>
+
+
 
     <!-- Main content -->
     <section class="content">
@@ -160,7 +163,7 @@
 
 
             
-            <div class="box-body">
+            <div class="box-body table-responsive">
               {% block body %}
               <table id="example1" class="table table-bordered table-striped">
                <thead>
@@ -219,6 +222,8 @@
 
 
 
+
+
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
@@ -234,7 +239,7 @@
   </div>
   <!-- ./wrapper -->
 
-  <script src="dist/adminlte.min.js"></script>
+  <script src="{{ url_for('static', filename='dist/adminlte.min.js') }}"></script>
 
 </body>
 

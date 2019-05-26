@@ -85,7 +85,7 @@
               <i class="fa fa-home"></i> <span>Home</span>
             </a>
           </li>
-          <li class="treeview active">
+          <li >
             <a href="#">
               <i class="fa fa-building"></i>
               <span>Instructor Management</span>
@@ -98,7 +98,7 @@
               <li id="menu-view-all-device"><a href="/adminviewinstructor"><i class="fa fa-circle-o"></i> View Instructor</a></li>
             </ul>
           </li>
-          <li>
+          <li class="active">
             <a href="/adminstudentmanage">
               <i class="fa fa-users"></i> <span>Student Management</span>
             </a>
@@ -128,12 +128,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Edit Instructor
+        Edit Student
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Instructor Management</a></li>
-        <li class="active">Add Instructor</li>
+        <li><a href="#">Student Management</a></li>
+        <li class="active">edit Student</li>
       </ol>
     </section>
 
@@ -171,6 +171,7 @@
                   <div class="col-md-6">
 
                     <div class="form-group row">
+                      <input type="hidden" name="id" value="{{data[0]}}">
                       <div class="col-md-3"><label for="name">First Name</label></div>
                       <div class="col-md-9"><input  value="{{data[1]}}" type="text" name="frst_name" class="form-control"></div>
                     </div>
