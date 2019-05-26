@@ -1345,6 +1345,7 @@ def questionviewselect():
         return render_template("/questionviewselect.html")
 
 
+git log
 def learning_user():
     data = open('data/corpus').read()
     labels, texts = [], []
